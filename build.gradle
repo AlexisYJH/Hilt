@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.1"
+        //Hilt引入-1. 将 hilt-android-gradle-plugin 插件添加到项目的根级 build.gradle 文件
+        //hilt
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.28-alpha'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
